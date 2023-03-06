@@ -2,6 +2,22 @@ function animateH1(event, h1, letters) {
     let iteration = 0;
     let interval;
     let isHovering = false;
+    let cardHover = false;
+
+    const card = h1.closest(".card");
+    card.addEventListener("mouseenter", function() {
+        cardHover = true;
+        h1.dispatchEvent(new Event("mouseleave"));
+    });
+  
+    card.addEventListener("mouseleave", function() {
+      setTimeout(function() {
+          cardHover = false;
+          setTimeout(function() {
+              clearInterval(interval);
+          }, 500);
+      }, 500);
+  });
   
     h1.addEventListener("mouseenter", function() {
       isHovering = true;

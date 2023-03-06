@@ -29,7 +29,8 @@ body {
   top: -50%;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;  
+  gap: 8px; 
+  row-gap: 20vh; 
   max-width: 916px;
   width: calc(100% - 20px);
 }
@@ -97,7 +98,7 @@ h1, h2, h3, h4, span {
   color: #730002;
   font-family: "Font", monospace;
   font-size: 16px;
-  font-weight: 400px;
+  font-weight: 400;
   margin: 0px;
   transition: opacity 1s ease;
 }
