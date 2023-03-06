@@ -25,18 +25,13 @@ body {
   user-select: none; /* Standard syntax */
 }
 
-#deck {
-  width: 100vw;
-  height: auto;
-}
-
 #cards {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  margin-bottom: 20px;
+  margin-top: 205vh;
 }
 
 #cards:hover > .card::after {
@@ -45,7 +40,7 @@ body {
 
 .card {
   background-color: var(--card-color);
-  border-radius: 20px;
+  border-radius: 15px;
   display: flex;
   height: 700px;
   flex-direction: column;
